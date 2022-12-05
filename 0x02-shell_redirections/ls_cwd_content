@@ -1,15 +1,16 @@
-.
-..
-0-hello_world
-1-confused_smiley
-2-hellofile
-3-twofiles
-4-lastlines
-5-firstlines
-6-third_line
-7-file
-8-cwd_state
-*\"Best School"\\*$?*****:)
-iacta
-ls_cwd_content
-README.md
+total 44
+drwxr-xr-x 2 root root 268 Dec  5 08:31 .
+drwxr-xr-x 6 root root 121 Dec  5 03:29 ..
+-rwxr--r-- 1 root root  32 Dec  5 04:09 0-hello_world
+-rwxr--r-- 1 root root  28 Dec  5 05:43 1-confused_smiley
+-rwxr--r-- 1 root root  28 Dec  5 05:20 2-hellofile
+-rwxr--r-- 1 root root  39 Dec  5 05:33 3-twofiles
+-rwxr--r-- 1 root root  29 Dec  5 05:37 4-lastlines
+-rwxr--r-- 1 root root  29 Dec  5 05:46 5-firstlines
+-rwxrwxrwx 1 root root  40 Dec  5 06:59 6-third_line
+-rwxr--r-- 1 root root  73 Dec  5 08:16 7-file
+-rwxr--r-- 1 root root  36 Dec  5 08:31 8-cwd_state
+-rw-r--r-- 1 root root  12 Dec  5 08:17 *\"Best School"\\*$?*****:)
+-rw-r--r-- 1 root root   0 Dec  5 06:38 iacta
+-rw-r--r-- 1 root root   0 Dec  5 08:31 ls_cwd_content
+-rw-r--r-- 1 root root  15 Dec  5 03:56 README.md
