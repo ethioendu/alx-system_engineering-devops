@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#a Bash script that displays Best School 10 times using while loop
+#initialize the couner
+n=1
+while [ $n -le 10 ]
+do
+	echo "Best School"
+	(( n++ ))
+done
