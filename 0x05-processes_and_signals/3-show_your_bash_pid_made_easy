@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 
-pgrep 'bash$' -l
+pgrep -l bash
