@@ -2,8 +2,9 @@
 #a Bash script that displays To infinity and beyond indefinitely.
 #In between each iteration of the loop, add a sleep 2
 
-for (( ; ; ))
-do
-	echo "To infinity and beyond"
-	sleep 2
+#!/usr/bin/env bash
+# This script displays a statement indefinitely
+while true; do
+    echo "To infinity and beyond"
+    sleep 2
 done
