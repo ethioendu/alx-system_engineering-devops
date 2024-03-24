@@ -3,4 +3,4 @@
 # name of the created private 'school'
 # bits '4096'
 # passphrase 'betty'
-ssh-keygen -t rsa  -b 4096
+ssh-keygen -b 4096 -f school -t rsa -N betty
