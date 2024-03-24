@@ -1,0 +1,8 @@
+#create a file in .shh/sshconfig
+#configure it to connect to a server without typing a password.
+#configuration must be configured to use the private key ~/.ssh/school
+#configuration must be configured to refuse to authenticate using a password
+Host *
+     IdentityFile ~/.ssh/school
+     PasswordAuthentication no
+     HostbasedAuthentication no
