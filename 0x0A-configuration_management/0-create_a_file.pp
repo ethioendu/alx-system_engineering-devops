@@ -1,9 +1,9 @@
-# Create a file in /tmp
-file { '/temp/school':
-  ensure  => 'present',
-  content => 'I love Puppet',
-  group   => 'www-data',
+# Puppet Manifest: Create a file at /tmp/school
+#with specific permissions, owner, group, and content
+file { '/tmp/school':
+  ensure  => file,
   mode    => '0744',
   owner   => 'www-data',
-  path    => '/tmp/school',
+  group   => 'www-data',
+  content => 'I love Puppet',
 }
