@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#instructions/commands to install nginx on web server and creating first html
+sudo apt-get update
+sudo apt-get -y upgrade
+sudo apt install -y nginx ufw
+
+sudo ufw allow 'ssh'
+sudo ufw allow 'Nginx full'
+
+echo "Hello World!" | sudo tee /var/www/html/index.html
+mystring="server_name _;\n\trewrite ^\/redirect_me https:\/\/www.trashloop.com\/ permanent;"
+
+sudo sed -i "s/server_name _;/$mystring/" /etc/nginx/sites-enabled/default
+
+sudo service nginx restart
+
