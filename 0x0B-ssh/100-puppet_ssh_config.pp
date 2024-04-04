@@ -1,12 +1,14 @@
-#!/usr/bin/env bash
-# Automating my Tasks using Puppet
+#create ssh config file
+#configuration must be configured to use the private key ~/.ssh/school
+#configuration must be configured to refuse to authenticate using a password
+file_line { 'change identity_file':
+  ensure => present,
+  path   => '/etc/ssh/ssh_config',
+  line   => '   IdentityFile ~/.ssh/school',
+}
 
-file { '/etc/ssh/ssh_config':
-  ensure  => present,
-content => "
-    # SSH client configuration
-    Host *
-      IdentityFile ~/.ssh/school
-      PasswordAuthentication no
-  ",
+file_line { 'turn off pwd auth':
+  ensure => present,
+  path   => '/etc/ssh/ssh_config',
+  line   => '   PasswordAuthentication no',
 }
