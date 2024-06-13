@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# restart gracefully gunicorn
-pkill -HUP gunicorn
+# Gracefully reloads Gunicorn.
+#shellcheck disable=SC2009
+ps aux | grep gunicorn | awk '{ print $2 }' | xargs kill -HUP
