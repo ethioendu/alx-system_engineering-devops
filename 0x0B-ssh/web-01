@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
-#uses ssh to connect my server using the private key ~/.ssh/school
-#with the user ubuntu
-ssh -i ~/.ssh/id_rsa ubuntu@34.237.91.119
+# Server-01 login commands
+
+# Setting up the SSH agent
+eval $("ssh-agent")
+
+# Path to identityFile
+ssh-add ~/.ssh/school
+
+# Username and IP Address 
+ssh ubuntu@100.26.234.123		
